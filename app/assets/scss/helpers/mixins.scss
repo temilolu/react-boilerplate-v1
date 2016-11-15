@@ -1,0 +1,21 @@
+/* Mixins */
+
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: #{$arguments};
+  -moz-box-shadow: #{$arguments};
+  box-shadow: #{$arguments};
+}
+
+@mixin box-sizing($arguments) {
+  box-sizing: #{$arguments};
+  -moz-box-sizing: #{$arguments};
+  -webkit-box-sizing: #{$arguments};
+}
